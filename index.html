@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            For my sweetie
+        </title>
+        <meta charset="UTF-8">
+        <link href="placinte2.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="part1">
+            <a class="text1">For my sweetie</a>
+            <div class="cb"> 
+                <button class="b1" id="showButton" onclick="toggleVisibility()">
+                    $$$
+                </button>
+            </div>
+        </div>
+        <div class="links" id="hiddenElement">
+            <a href="nigger2.html" class="l1">1</a>
+            <br>
+            <a href="nigger3.html"class="l1">2</a>
+            <br>
+            <a href="nigger4.html"class="l1">3</a>
+            <br>
+            <a href="nigger5.html"class="l1">4</a>
+        </div>
+        <div class="part2">
+            <div class="con1">1. Why you need to be my pookie bear??? <img src="img1.jpg"></div>
+            <div class="con2">2. What would happen if we will be together????<img src="img2.jpg"></div>
+            <div class="con3">3. What type of guy am I???????<img src="img3.jpg"></div>
+            <div class="con4">4. Why I choose YOOU :))))))?<img src="img4.jpg"></div>
+        </div>
+    </body>
+    <script>
+        function toggleVisibility() {
+      var element = document.getElementById("hiddenElement");
+
+      
+      if (element.style.display === "none" || getComputedStyle(element).display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+
+      
+      var visibilityState = element.style.display === "none" ? "hidden" : "visible";
+      history.replaceState({}, document.title, "?visibility=" + visibilityState);
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      var params = new URLSearchParams(window.location.search);
+      var visibility = params.get("visibility");
+
+      if (visibility === "hidden") {
+        var element = document.getElementById("hiddenElement");
+        element.style.display = "none";
+      }
+    });
+    </script>
+</html>

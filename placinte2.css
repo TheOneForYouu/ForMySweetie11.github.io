@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('img10.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.part1{
+    background-color:rgb(255, 198, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1{
+    font-size: 30px;
+    color: rgb(180, 34, 180);
+}
+
+.cb{
+    float:right;
+}
+
+.b1{
+    width: 75px;
+    border-radius: 20px;
+    background-color: rgb(236, 129, 246);
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 9px;
+}
+
+.links{
+    font-size: 50px;
+    text-align: right;
+    background-image: linear-gradient(rgb(211, 101, 223), rgb(255, 0, 93));
+    padding: 50px;
+    display: none;
+    position: absolute;
+}
+
+.l1{
+    text-decoration: none;
+    color: rgb(107, 51, 112);
+    margin: 30px;
+}
+
+#hiddenElement {
+    opacity: 1;
+    transform: translateX(-100%);
+    animation: popIn 0.5s ease-in-out forwards;
+  }
+
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.part2{
+    padding: 20px;
+    font-size: 20px;
+    display: grid;
+}
+
+.con1{
+    background-color: rgb(218, 77, 147);
+    display: table;
+    padding: 70px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.con2{
+    background-color: rgb(218, 77, 147);
+    display: table;
+    padding: 70px;
+    margin: 15px;
+    border-radius: 50px;
+    float: right;
+}
+
+.con3{
+    background-color: rgb(218, 77, 147);
+    display: table;
+    padding: 70px;
+    margin: 15px;
+    border-radius: 50px;
+    float: right;
+}
+
+.con4{
+    background-color: rgb(218, 77, 147);
+    display: table;
+    padding: 70px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+img{
+    width: 100px;
+    padding: 3px;
+    float:CENTER;
+}
